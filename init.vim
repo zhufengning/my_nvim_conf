@@ -1,4 +1,3 @@
-
 call plug#begin()
 " Use release branch (recommend)
 Plug 'preservim/nerdcommenter'
@@ -28,7 +27,7 @@ hi Pmenu ctermbg=green ctermfg=white
 nmap <F8> :TagbarToggle<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 " set clipboard+=unnamedplus
-set clipboard^=unnamed,unnamedplus
+set clipboard=unnamed
 nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
 hi Pmenu ctermbg=black ctermfg=white
 nnoremap <silent> K :call <SID>show_documentation()<CR>
