@@ -23,6 +23,7 @@ set cursorline  " 光标所在的当前行高亮
 set shiftwidth=4
 set cindent
 set autoindent
+set cole=0
 hi Pmenu ctermbg=green ctermfg=white
 nmap <F8> :TagbarToggle<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
