@@ -26,6 +26,7 @@ set cursorline  " 光标所在的当前行高亮
 set shiftwidth=4
 set cindent
 set autoindent
+set cole=0
 set hidden
 set shortmess+=c
 
