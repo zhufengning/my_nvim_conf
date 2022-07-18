@@ -77,5 +77,5 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
-
+imap <silent> <Esc> <Esc>:silent !im-select 1033<CR>
 let g:vista_default_executive = 'coc'
