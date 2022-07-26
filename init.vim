@@ -10,6 +10,7 @@ Plug 'preservim/nerdtree'
 Plug 'liuchengxu/vista.vim'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'EdenEast/nightfox.nvim', { 'tag': 'v1.0.0' } " Vim-Plug
+Plug 'dstein64/nvim-scrollview', { 'branch': 'main'}
 let g:rainbow_active = 1
 " Or build from source code by using yarn: https://yarnpkg.com
 " Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
@@ -80,7 +81,6 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
-imap <silent> <Esc> <Esc>:silent !im-select 1033<CR>
 let g:vista_default_executive = 'coc'
 colorscheme duskfox
 
