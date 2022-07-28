@@ -11,6 +11,9 @@ Plug 'liuchengxu/vista.vim'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'EdenEast/nightfox.nvim', { 'tag': 'v1.0.0' } " Vim-Plug
 Plug 'dstein64/nvim-scrollview', { 'branch': 'main'}
+Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
+" Plug 'ryanoasis/vim-devicons' Icons without colours
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 let g:rainbow_active = 1
 " Or build from source code by using yarn: https://yarnpkg.com
 " Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
@@ -84,3 +87,7 @@ nmap <silent> gr <Plug>(coc-references)
 let g:vista_default_executive = 'coc'
 colorscheme duskfox
 
+set termguicolors
+lua << EOF
+require("bufferline").setup{}
+EOF
