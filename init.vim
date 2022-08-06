@@ -206,3 +206,6 @@ set termguicolors
 lua << EOF
 require("bufferline").setup{}
 EOF
+
+nmap <F7> :Vista!!<CR>
+nnoremap <F8> :NERDTreeToggle<CR>
