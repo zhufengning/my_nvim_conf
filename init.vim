@@ -14,6 +14,8 @@ Plug 'dstein64/nvim-scrollview', { 'branch': 'main'}
 Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
 " Plug 'ryanoasis/vim-devicons' Icons without colours
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+Plug 'brooth/far.vim'
+Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
 let g:rainbow_active = 1
 " Or build from source code by using yarn: https://yarnpkg.com
 " Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
