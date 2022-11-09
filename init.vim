@@ -209,5 +209,5 @@ lua << EOF
 require("bufferline").setup{}
 EOF
 
-nmap <F7> :Vista!!<CR>
-nnoremap <F8> :NERDTreeToggle<CR>
+nmap <F8> :Vista!!<CR>
+nnoremap <F7> :NERDTreeToggle<CR>
