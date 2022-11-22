@@ -202,7 +202,7 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 let g:vista_default_executive = 'coc'
-colorscheme duskfox
+colorscheme nightfox
 
 set termguicolors
 lua << EOF
