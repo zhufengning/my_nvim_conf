@@ -16,6 +16,8 @@ Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'brooth/far.vim'
 Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
+Plug 'sheerun/vim-polyglot'
+" Plug 'ionide/Ionide-vim'
 let g:rainbow_active = 1
 " Or build from source code by using yarn: https://yarnpkg.com
 " Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
@@ -73,6 +75,7 @@ inoremap <silent><expr> <TAB>
       \ CheckBackspace() ? "\<TAB>" :
       \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+nmap <F2> :Clap files<Cr>
 
 function! CheckBackspace() abort
   let col = col('.') - 1
@@ -207,6 +210,7 @@ colorscheme nightfox
 set termguicolors
 lua << EOF
 require("bufferline").setup{}
+--require'lspconfig'.fsautocomplete.setup{}
 EOF
 
 nmap <F8> :Vista!!<CR>
